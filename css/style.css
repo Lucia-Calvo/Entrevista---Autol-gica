@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.background{
+    background-image: url(/image/background-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.header img{
+    width: 5%;
+    position: absolute;
+    bottom: 90vh;
+    left: 2vw;
+}
+
+
+.navbar{
+    padding: 3%;
+}
+
+.navbar__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;  
+    gap: 4%;  
+}
+
+.navbar__items{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar__items:hover{
+    border-bottom: 2px solid #D5CEAC;
+}
+
+.container-index{
+    display: block;
+    position: absolute;
+    top: 25vh;
+    padding: 4% 4% 4% 8%;
+    
+}
+
+.container-index h1{
+    color: white;
+    font-size: 5rem;
+    width: 40vw;
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+}
+.container-index h3{
+    color: #fbfcfd;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 2%;
+}
+
+.container-index button{
+    font-size: 1.1rem;
+    color: #fbfcfd;
+    padding: 2%;
+    border: 1px solid #fbfcfd;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5%;
+    background: linear-gradient(to left, transparent 50%, #fbfcfd 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 0.5s;
+}
+
+.container-index button:hover{
+    background-position: left;
+    color: black;
+}
+
+.bubbles img{
+width: 4%;
+animation: bubble 7s linear infinite;
+z-index: -1;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+}
+
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 20px;
+}
+
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+}
+
+.flex-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6% 2% 6% 2%;
+}
+
+.flex-contain img{
+    width: 50vw;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.flex-contain div{
+    width: 50vw;
+    height: 48vh;
+    background-color: #abbcdd;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+.flex-contain div h5{
+    font-family:'Righteous';
+    font-size: 3rem;
+    color: #fbfcfd;
+    text-align: center;
+}
+
+.flex-contain div p{
+    font-size: 1.2rem;
+    color: #fbfcfd;
+    padding: 3.5%;
+    text-align: justify;
+}
+
+.container-box__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% 2% 2% 2%;
+    padding: 4% 1% 4% 0%;;
+    border-bottom: 2px solid #abbcdd;
+}
+
+.border{
+    border-top: 2px solid #abbcdd;
+}
+
+.container-box__img div{
+    width: 50vw;
+    height: 48vh;
+    background-color: #abbcdd;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img{
+    width: 45vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.question{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+
+.container-box{
+    padding: 4% 2% 4% 2%;
+    border-bottom: 2px solid #abbcdd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-box div{
+    width: 50vw;
+    height: 48vh;
+    background-color: #abbcdd;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parr{
+    text-align: justify;
+    font-size: 1.1rem;
+}
+  
